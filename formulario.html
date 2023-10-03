@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        
+        h2 {
+            text-align: center;
+            background-color: aqua;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid grey;
+            border-radius: 3px;
+        }
+        
+        input[type="submit"],
+        input[type="button"] {
+            background-color: turquoise;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+            background-color: turquoise;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <form method="post" action="http://edwynespinala.free.nf/guardar.php">
+        <h2 class="h2">Formulario de Registro</h2>
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
+    
+        
+        <input type="submit" value="Enviar">
+        <input type="button" value="Limpiar" onclick="limpiarCampos()">
+    </form>
+
+    <script>
+        function limpiarCampos() {
+            document.getElementById('nombre').value = '';
+            document.getElementById('correo').value = '';
+            document.getElementById('comentarios').value = '';
+            
+            
+      
+      
+        }
+    </script>
+</body>
+</html>

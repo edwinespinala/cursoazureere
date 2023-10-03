@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<!--  MAQUETACION PROYECTO FINAL SITIO WEB HOSTING -->
+<html>
+
+<head>
+    <title>MASDTHERhost</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Proyecto Final">
+    <meta name="keywords" content="Hmtl, mapas,formularios, css, javascript">
+    <meta name="author" content="Edwyn Espinal 200860120007">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        * {
+            margin: 0px;
+            font-family: monserrat;
+        }
+
+        body {
+           
+         background-image: url("imagenes/fondo2.avif");
+            background-repeat: repeat;
+        }
+
+
+        /* CLASE MENU */
+        .menu {
+            position: sticky;
+            top: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            list-style: none;
+            line-height: 60px;
+            background-color: brown;
+        }
+
+        .menu img {
+            max-width: 10%;
+            height: auto;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: gray;
+            padding: 36px 10px 26px 10px;
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            font-size: 20px;
+            color: white;
+        }
+
+        /* ESTILOS PARA TABLES*/
+        @media all and(max-width:800px){
+            .menu{
+                justify-content: space-around;
+            }
+
+        }
+
+
+        @media all and(max-width:800px){
+            .menu{
+                  flex-flow:column wrap;
+                  padding: 5x;
+                  align-items: center;
+                  line-height: 30px;
+                  
+            }
+              
+          .menu a{
+            text-align: center;
+            padding: 0px;
+            border-top: solid grey;
+            border-bottom: solid grey;
+
+
+          }
+       
+           .menu img{
+                 max-width: 40px;
+                 height: auto;
+
+           }
+       
+        }
+
+        /* CLASE acercadenosotros*/
+        .acercadenosotros{
+            display:flex;
+            flex-direction: row;
+            width: 90%;
+            flex-wrap:wrap;
+            justify-content: center;
+            background-color: black;
+            margin: auto;
+          
+
+        }
+
+        .acercadenosotros img{
+            max-width: 99%;
+            border-radius:5%;
+        }
+
+        .acercadenosotros img:hover{
+            box-shadow: 0px 0px 5px 5px white;
+        }
+
+        .acercadenosotroshijo{
+            width: calc((90%-40px)/2);
+            padding:50px 20px 50px 20px;
+            text-align:center;
+            color:gray;
+            flex:1 400px;            
+        }
+
+         /* CLASE PRECIOS*/
+         .precios{
+            display:flex;
+            flex-direction: row;
+            width: 90%;
+            flex-wrap:wrap;
+            justify-content: center;
+            background-color: black;
+            margin: auto;
+          
+
+        }
+
+        .precios img{
+            max-width: 99%;
+            border-radius:5%;
+        }
+
+        .precios img:hover{
+            box-shadow: 0px 0px 5px 5px white;
+        }
+
+        .precioshijo{
+            width: calc((90%-40px)/2);
+            padding:50px 20px 50px 20px;
+            text-align:center;
+            color:gray;
+            flex:1 400px;            
+        }
+           /* CLASE clientes*/
+        
+           .clientes{
+            display:flex;
+            flex-direction: row;
+            width: 90%;
+            flex-wrap:wrap;
+            justify-content: center;
+            margin: auto;
+            background-color: black;
+          
+
+        }
+
+        .clientes img{
+            max-width: 99%;
+            border-radius:5%;
+        }
+
+        .clientes img:hover{
+            box-shadow: 0px 0px 5px 5px white;
+        }
+
+        .clienteshijo{
+            width: calc((90%-40px)/2);
+            padding:50px 20px 50px 20px;
+            text-align:center;
+            color:gray;
+            flex:1 400px;            
+        }
+        /* CLASE video*/
+        .videos{
+            display:flex;
+            flex-direction: row;
+            width: 90%;
+            flex-wrap:wrap;
+            justify-content: center;
+            background-color: black;
+            margin: auto;
+          
+
+        }
+
+        .videos img{
+            max-width: 99%;
+            border-radius:5%;
+        }
+
+        .videos img:hover{
+            box-shadow: 0px 0px 5px 5px white;
+        }
+
+        .videoshijo{
+            width: calc((90%-40px)/2);
+            padding:50px 20px 50px 20px;
+            text-align:center;
+            color:gray;
+            flex:1 400px;   
+                 
+        }
+   
+
+           /* CLASE video*/
+           .mapas{
+            display:flex;
+            flex-direction: row;
+            width: 90%;
+            flex-wrap:wrap;
+            justify-content: center;
+            margin: auto;
+            background-color: black;
+          
+
+        }
+
+        .mapas img{
+            max-width: 110%;
+            border-radius:5%;
+        }
+
+        .mapas img:hover{
+            box-shadow: 0px 0px 5px 5px white;
+        }
+
+        .mapashijo{
+            width: calc((90%-40px)/1);
+            padding:50px 20px 50px 20px;
+            text-align:center;
+         
+            flex:1 400px;            
+        }
+
+        /*CLASE aplicaahora */
+        .aplicaahora{
+            display:flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            justify-content: space-between;
+            background-color: black;
+            
+        }
+
+        .aplicaahora img{
+            max-width:120px;
+            border-radius:5%;
+          
+        }
+
+        .aplicaahora img:hover{
+            box-shadow: 0px 0px 5px 5px white;
+        }
+
+        .aplicahorahijo{
+          width: calc((90%-40px)/3);  
+          padding:80px 40px 80px 40px;
+          text-align:center;
+          color:gray;
+          flex:1 400px;            
+        }
+
+        #btaplicar{
+               background-color: grey;
+               color: white;
+               width: 130p;
+               height: 30px;
+               border-radius: 20%;
+
+        }
+
+        /*contactenos*/
+        .contactenos{
+            display:flex;
+            flex-direction: row;
+            width: 90%;
+            flex-wrap:wrap;
+            justify-content: center;
+            background-color: black;
+            margin: auto;
+        }
+
+        .contactenos img{
+            max-width: 99%;
+            border-radius:5%;
+        }
+
+        .contactenos img:hover{
+            box-shadow: 0px 0px 5px 5px white;
+        }
+
+        .contactenoshijo{
+            width: calc((90%-40px)/2);
+            padding:50px 20px 50px 20px;
+            text-align:center;
+            color:gray;
+            flex:1 400px;            
+        }
+
+        #btdropsuline{
+               background-color: grey;
+               color: white;
+               width: 130p;
+               height: 30px;
+               border-radius: 20%;
+
+        }
+
+        #btdropsuline:hover{
+             
+               width: 150p;
+               height: 50px;
+            
+
+        }
+
+        .piedepagina{
+            display:flex;
+            flex-direction: row;
+            width: 100%;
+            flex-wrap:wrap;
+            justify-content: center;
+            background-color: grey;
+            margin: auto;
+        }
+
+      
+    
+
+        .piedepaginahijo{
+            padding:50px 20px 50px 20px;
+            text-align:center;
+            color:black;
+            flex:1 400px;            
+        }
+
+        h2{
+           color: gray;
+           text-align: center;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           font-size: 32x;
+
+        }
+
+        #contenido {
+            max-height: 100px; 
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out; 
+        }       
+
+        .parrafo1{
+
+            text-align: left;
+        }
+
+        .hide{
+            display: none;
+
+        }
+        .show{
+            display: block;         
+        
+        }
+
+        .readMass_btn{
+            background-color: gray;  
+             border: none;
+             border-radius: 40px;
+             color:white;
+             padding: 15px 32px;
+             font-size: 1.2em;
+             box-shadow: 0px 0px 10px 0px grey;
+             cursor: pointer;
+
+        } 
+
+        .readMass_btn:hover{
+            background-color: black;  
+            color:white;
+            box-shadow: none;
+           transition: cubic-bezier(0.075, 0.82, 0.165 1)3.05s; 
+
+        } 
+
+        .registrar{
+         background-color: black;
+         border-radius: 5%;
+         width: 10px;
+         height: 10px;
+
+        }
+
+        #parrafo2 {
+            display: none; 
+             text-align: left; 
+        }
+
+        .video{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+
+        }
+
+        
+        .beneficio img{
+            max-width:90% ;
+            border-radius:5%;
+            text-align: ce;
+            padding:60px 60px 90px 40px;
+            margin: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .precios img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 50px;
+        }
+    </style>
+
+<script>
+     function mostrarParrafo() {
+            var parrafo2 = document.getElementById("parrafo2");
+            var botonLeerMas = document.getElementById("botonLeerMas");
+
+            // Cambiar la visibilidad del segundo párrafo
+            if (parrafo2.style.display === "none") {
+                parrafo2.style.display = "block";
+                botonLeerMas.innerHTML = "Leer menos";
+            } else {
+                parrafo2.style.display = "none";
+                botonLeerMas.innerHTML = "Leer más";
+            }
+            // Buscando minimizar la ventana de formulario
+            function abrirVentana() {
+            window.open("formulario.html", "", "width=400,height=300");
+    }
+        
+        }
+</script>
+
+
+</head>
+
+<body>
+    <div class="menu">
+        <img src="imagenes/logmh.jpg">
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#nosotrossomos">Nosotros Somos</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#contactenos">Contactecnos</a></li><br>
+            <li> <a href="formulario.html" id="registrar" class="registrar" target="_blank" onclick="abrirVentana()">Registrarse</a></li>
+
+          </ul>
+        
+    </div>
+ 
+    <a name="nosotrossomos"></a>
+    <h2>Nosoros somos</h2>
+    <div class="acercadenosotros">
+      
+        <div class="acercadenosotroshijo">
+            <h2>Nosotros Somos</h2>
+            <p class="parrafo1">
+            Uno de los primeros proveedores de alojamiento y registradores de nombres de dominio en Rusia, que apareció en el
+            mercado en 1999. La compañía ofrece a los clientes servicios integrales profesionales para la colocación y soporte de
+            proyectos de Internet de cualquier complejidad. <br><br>
+
+            masterhost proporciona a los clientes alojamiento virtual y VPS profesional, mantenimiento de servicios de correo,
+            alquiler de servidores propios y colocación de clientes, registro y alquiler de dominios, certificación SSL. <br><br>
+        
+                
+        </p>
+        <p id="parrafo2">
+        alquiler de servidores propios y colocación de clientes, registro y alquiler de dominios, certificación SSL. <br><br>
+        Monitoreamos regularmente las tendencias globales en el mercado de soluciones de TI y ampliamos nuestra cartera de
+        servicios para ofrecer a nuestros clientes un servicio moderno de alta calidad en los términos más favorables. <br><br>
+        masterhost se esfuerza por proporcionar un soporte técnico integral e integral para proyectos de Internet para que pueda
+        hacer frente a tareas estratégicamente importantes para su desarrollo.</p><br>
+        <button id="botonLeerMas" onclick="mostrarParrafo()" class="readMass_btn">Leer más</button>
+    
+               
+      </div>
+
+        <div class="acercadenosotroshijo">
+            <img src="imagenes/hostingmh1.jpg">
+        </div>
+        
+        
+      
+    </div>
+    
+    <br><br>
+    <a name="productos"></a>
+   
+    <h2>Productos</h2>
+    <div class="aplicaahora">
+        
+        <div class="aplicahorahijo">
+            <img src="imagenes/beneficio1.PNG">
+        </div>
+       
+     <div class="aplicahorahijo">
+     <img src="imagenes/beneficio2.PNG">
+     </div>
+                      
+          
+      <div class="aplicahorahijo">
+      <img src="imagenes/beneficio3.PNG">
+      </div>
+               
+    </div>
+           
+
+    <h2>VIDEO</h2>  
+    <div class="videos">
+        <div class="videoshijo">
+            <article>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SfnXrjhGczI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+             </article>
+
+        </div>
+ 
+
+    </div>   
+    
+ 
+    
+    <br><br>
+    
+    <h2>Beneficios</h2>
+    <div class="aplicaahora">
+
+        <div class="beneficio">
+            <img src="imagenes/beficio5.PNG">
+            </div>
+        
+        <div class="aplicahorahijo">
+            <img src="imagenes/beneficio1.PNG"><br>
+      
+        <img src="imagenes/beneficio2.PNG"><br>
+         
+      <img src="imagenes/beneficio3.PNG">
+      </div>
+    </div>
+
+
+    <a name="clientes"></a>
+   
+    <h2>NUESTROS CLIENTES</h2>
+    <div class="clientes">
+       <div class="clienteshijo">
+        <img src="imagenes/nuestrosclientes.PNG">
+       </div>
+     
+               
+    </div>
+
+
+    <a name="precios"></a>
+   
+    <h2>NUESTROS PRECIOS</h2>
+    <div class="precios">
+       <div class="precioshijo">
+           <img src="imagenes/precios.PNG">
+        </div>
+        
+               
+    </div>
+
+   
+    <a name="contactenos"></a>
+    <h2>Contactenos</h2>
+    <div class="contactenos">
+        <div class="contactenoshijo">
+         <h2>CONTACTENOS</h2>
+         <p>
+            https://masterhost.ru/contacts/
+         </p>      
+         <br><br>
+         <h2>Direccion</h2>
+         <p>
+            2º pasaje Yuzhnoportovy, casa 20A, edificio 4, entrada 1, piso 1
+            Recepción de visitantes: Lun-Vie de 9:00 a 19:00.
+            
+            Cuando vaya a nosotros, no olvide llevar su pasaporte. 
+            
+        
+         </p>  <br> 
+         <h2>Como llegar</h2><br>
+         <p>
+            CÓMO LLEGAR Estación de metro "Kozhukhovskaya", el primer coche del centro. Después de salir del metro, siga recto por
+            la calle Yuzhnoportovaya, luego vaya por el paso de peatones hasta el 1er pasaje Yuzhnoportovy, continúe recto (más allá
+            del mercado de automóviles del puerto de Yuzhny), vaya al 2do pasaje Yuzhnoportovy (a lo largo del paso peatonal) y
+            luego en línea recta hasta el centro de negocios del puerto de Yuzhny. Tiempo de viaje: 5–7 minutos </p><br><br>
+
+    
+        </div>
+         <div class="contactenoshijo">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8992.924984366338!2d37.68404971428851!3d55.70235209587679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab4db5441533b%3A0x7370df27f8f7a86f!2s.masterhost!5e0!3m2!1ses-419!2shn!4v1692074590595!5m2!1ses-419!2shn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             
+
+         </div>
+
+
+    </div>
+    
+    <div class="piedepagina">
+
+        <div class="piedepaginahijo">
+            <p>
+                Derechos Reservados 2023
+            </p>
+
+       </div>
+       
+       <div class="piedepaginahijo">
+        <p >
+            Diseñado por Ricardo Espinal
+        </p>
+       </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
