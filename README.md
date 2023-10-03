@@ -1,0 +1,2 @@
+# cursoazureere
+prueba de estatico
